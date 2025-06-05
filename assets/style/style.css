@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #004797;
+    --secondary-color: #eb5b25;
+    --font-family: Arial, Sans-serif;
+    --principal-width: 70%;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.header {
+    background-color: var(--primary-color);
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.header__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    height: 110px;
+    width: var(--principal-width);
+    margin: 0 auto;
+}
+
+.logo {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+    margin-right: 37px;
+}
+
+.logo__img {
+    width: 240px;
+}
+
+.header__navbar {
+    margin-left: 20px;
+}
+
+.navbar__ul {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 35px;
+}
+
+.ul__li {
+    list-style: none;
+}
+
+.li__link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.other__opt {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.search {
+    margin: 20px 0;
+    position: relative;
+}
+
+.search__space {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    place-items: 20px;
+    
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 0;
+    margin: 7px;
+    color: var(--secondary-color);
+}
+
+.navbar2 {
+    margin: 20px 0;
+}
+
+.navbar2__ul {
+    display: flex;
+    justify-content: space-evenly;
+    height: 35px;
+}
+
+.ul__li2 {
+    list-style: none;
+}
+
+.li2__link {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+.navbarup__ul {
+    width: var(--principal-width);
+    margin: 0 auto;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    font-size: 17px;
+
+}
+
+.ul__liup {
+    list-style: none;
+    border-inline: 1px solid var(--primary-color);
+    padding: 0 7px;
+}
+
+.liup__link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.main__first {
+    margin: 0px;
+    padding-top: 30px;
+    background-color: #f1f1f1;
+}
+
+.first__area {
+    width: var(--principal-width);
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 352px 150px 70px 300px;
+    gap: 20px;
+}
+
+.area__img{
+    grid-column: 1/4;
+}
+
+.area__img img {
+    width: 100%;
+}
+
+.area__grid {
+    grid-column: 4/7;
+}
